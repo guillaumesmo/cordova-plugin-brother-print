@@ -41,11 +41,13 @@
                 <param name="ios-package" value="APPPrinter"/>
             </feature>
         </config-file>
-
+        <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+            <string>Bluetooth access is required for wireless printing</string>
+        </config-file>
         <header-file src="src/ios/APPPrinter.h" />
         <source-file src="src/ios/APPPrinter.m" />
-        <framework src="res/ios/BRPtouchPrinterKit.framework" custom="true"/>
-        <framework src="SystemConfiguration.framework" />
-        <framework src="ExternalAccessory.framework" />
+        <!--<framework src="res/ios/BRPtouchPrinterKitW.framework" custom="true"/>-->
+        <framework src="CoreBluetooth.framework" />
+        <framework src="libc++.tbd" />
     </platform>
 </plugin>
