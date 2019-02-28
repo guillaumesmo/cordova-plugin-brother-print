@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
-#import <BRPtouchPrinterKit/BRPtouchNetworkManager.h>
-#import <BRPtouchPrinterKit/BRPtouchPrinter.h>
+#import <BRPtouchPrinterKitW/BRPtouchNetworkManager.h>
+#import <BRPtouchPrinterKitW/BRPtouchPrinter.h>
 
 @interface APPPrinter : CDVPlugin <BRPtouchNetworkDelegate>
 {
